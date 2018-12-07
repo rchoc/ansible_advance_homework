@@ -1,7 +1,6 @@
 - hosts: frontends
   gather_facts: false
   tasks:
-
   - name: Production servers URI check with curl
     uri:
      url: "http://{{inventory_hostname}}"

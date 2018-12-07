@@ -4,7 +4,7 @@
 
   - name: Production servers URI check with curl
     uri:
-     url: "http://{{item.public_v4}}"
+     url: "http://{{inventory_hostname}}"
      return_content: yes
     register: webpage
     tags:
